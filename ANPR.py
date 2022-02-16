@@ -8,7 +8,7 @@ from PIL import Image
 
 # To Add Tesseract-OCR Plugin
 pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files(x86)\\Tesseract-OCR\\tesseract.exe'
-img = cv2.imread('E:\samples\imageplate.jpg',cv2.IMREAD_COLOR)      # To Add Image 
+img = cv2.imread('[/image url/]',cv2.IMREAD_COLOR)      # To Add Image 
 img = imutils.resize(img, width=500 )
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) #convert to grey scale
 gray = cv2.bilateralFilter(gray, 11, 17, 17) #Blur to reduce noise
